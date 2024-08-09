@@ -11,6 +11,9 @@ import {
 import Home from "./pages/home";
 import About from "./pages/about";
 import LayoutPage from "./layout/layoutPage";
+import HelpLayout from "./layout/help";
+import Faq from "./pages/help/faq";
+import Contact from './pages/help/contact'
 
 function App() {
   const router = createBrowserRouter(
@@ -18,6 +21,10 @@ function App() {
       <Route path="/" element={<LayoutPage/>}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="help" element={<HelpLayout/>}>
+          <Route path="faq" element={<Faq/>}/>
+          <Route path="contact" element={<Contact/>}/>
+        </Route>
       </Route>
     )
   );
