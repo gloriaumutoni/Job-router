@@ -8,6 +8,7 @@ const LayoutPage = () => {
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="about">About</NavLink>
+          <NavLink to='help'>Help</NavLink>
         </nav>
       </header>
       <main>
