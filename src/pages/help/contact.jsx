@@ -2,7 +2,7 @@ export default function Contact() {
     return (
       <div className="contact">
         <h3>Contact Us</h3>
-        <form >
+        <form>
           <label>
             <span>Your email:</span>
             <input type="email" name="email" required />
